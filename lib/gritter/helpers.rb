@@ -1,5 +1,7 @@
 module Gritter
   module Helpers
+    include Sprockets::Helpers::RailsHelper
+    
     def add_gritter text, *args
       options = args.extract_options!
       options[:title] = "Notification" if options[:title].blank?

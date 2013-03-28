@@ -2,6 +2,7 @@ require 'gritter/helpers'
 require 'gritter/gflash'
 require 'gritter/engine'
 require 'fileutils'
+require 'sprockets/railtie'
 
 module Gritter
   def self.initialize
